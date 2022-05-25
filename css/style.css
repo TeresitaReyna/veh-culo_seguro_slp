@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap');
+
+:root{
+    --titleFont: 'Inconsolata', monospace;
+    --textFont: 'Merriweather Sans', sans-serif;
+    --btnFont: 'Signika Negative', sans-serif;
+    --crema: #f6f4ef;
+}
+
+.informacion{
+    display:flex;
+	justify-content: center;
+	align-items: center;
+    padding: 60px;
+}
+
+.informacion__contenedor{
+    background: var(--crema);
+    border: 5px;
+    border-style: double;
+    border-radius: 50px;
+    box-shadow: -2px 6px 20px 6px rgba(2, 2, 2, 0.689);
+    width: 25vw;
+    padding: 15px;
+    padding-bottom: 20px;
+    display:flex;
+	justify-content: center;
+	align-items: center;
+    flex-wrap: wrap;
+}
+
+.informacion__contenedor--titulo{
+    /* background: red; */
+    height: 10vh;
+    display:flex;
+	justify-content: center;
+	align-items: center;
+    flex-wrap: wrap;
+}
+
+.titulo{
+    font-family: var(--titleFont);
+    font-size: 1.5em;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 19.3ch;
+
+    animation: typing 2s steps(20), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    display: block;
+}
+
+@keyframes typing {
+    from {
+       width: 0; 
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.informacion__contenedor--texto{
+    /* background: yellow; */
+    padding: 20px;
+    padding-top: 5px;
+}
+
+.texto{
+    text-align: justify;
+    font-size: medium;
+    font-family: var(--textFont);
+}
+
+.informacion__contenedor--btn{
+    font-size: 1.3em;
+    font-family: var(--btnFont);
+	text-decoration: none;
+	text-align: center;
+    color: white;
+    
+    border-radius: 50px;
+	background: #147114;
+	box-shadow: 1px 4px 6px 1px rgb(0 0 0 / 65%);
+    
+    padding: 15px;
+	margin: 15px;
+	display:inline-block;
+}
+
+.informacion__contenedor--btn:hover{
+    background: #2BD204;
+    color: black;
+}
+
+@media (max-width: 720px) {
+    .informacion__contenedor{
+        width: 50vw;
+    }
+    
+    .titulo{
+        font-size: 1em;
+    }
+
+    .informacion__contenedor--btn{
+        font-size: 1em;
+        margin: 10px;
+    }
+}

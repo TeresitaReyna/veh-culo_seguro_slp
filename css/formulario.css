@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,600;0,700;1,100;1,600;1,700&family=Merriweather:ital,wght@0,300;1,300&display=swap"); 
+
+:root { 
+	--fuente: "Barlow", sans-serif;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: var(--fuente);
+}
+
+body {
+    background-color:#000;
+}
+
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.login__contenido {
+    width: 320px;
+    height: 420px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 3px #00ff0e;
+    padding: 70px 30px;
+  }
+  
+  .login__contenido .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+  
+  .login__contenido h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .login__contenido label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+
+
+  .login__contenido input {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  .login__contenido input[type="text"], .login__contenido input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    height: 45px;
+    color: black;
+    font-size: 16px;
+  }
+  
+  .login__contenido input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #209403;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+  }
+  
+  .login__contenido input[type="submit"]:hover {
+    cursor: pointer;
+    background: #2BD204;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .login__contenido a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #3F3F3F;
+  }
+  
+  .login__contenido a:hover {
+    color: #00FF00;
+  }

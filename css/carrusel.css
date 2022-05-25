@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+:root{
+    --fontType: 'Dosis', sans-serif; 
+}
+
+.carrusel {
+    padding-top: 60px;
+}
+
+.carrusel__contenedor{
+    box-shadow: 0px 9px 20px 3px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 100vw;
+    max-height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrusel__lista{ /* Modificable según la cantidad de imagnes (width y height)*/
+    width: 400%;
+    height: 100%;
+    margin-left: -100%;
+    display: flex;
+}
+
+.carrusel__elemento{
+    width: 100%;
+}
+
+.carrusel__elemento--img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.carrusel__btn{
+    font-family: var(--fontType);
+    font-size: 70px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.carrusel__btn:hover{
+    color: white
+}
+
+.carrusel__anterior{
+    left: 10px;
+}
+
+.carrusel__siguiente{
+    right: 10px;
+}
+
+@media (max-width: 700px) {
+    .carrusel__btn{
+        font-size: 100%;
+    }
+}
+
