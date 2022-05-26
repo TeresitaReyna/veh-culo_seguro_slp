@@ -42,27 +42,28 @@
 
 .titulo{
     font-family: var(--titleFont);
-    font-size: 1.5em;
+    font-size: 1em;
     white-space: nowrap;
-    border-right: 2px solid;
-    width: 19.3ch;
-
-    animation: typing 2s steps(20), blink .5s infinite step-end alternate;
+    border-right: 2px solid rgba(255,255,255,.75);
     overflow: hidden;
     display: block;
 }
 
-@keyframes typing {
-    from {
-       width: 0; 
-    }
+.titulo--animado{
+    animation:  typewriter 2s steps(22) 1s 1 normal both,
+                blinkTextCursor 800ms steps(22) infinite normal;
 }
 
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 9.6em;}
 }
+
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(0, 0, 0, 0.75);}
+    to{border-right-color: transparent;}
+}
+  
 
 .informacion__contenedor--texto{
     /* background: yellow; */
