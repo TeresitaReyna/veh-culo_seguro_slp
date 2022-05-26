@@ -7,7 +7,8 @@
     <link rel="icon" type="image/x-icon" href="img/icon.png">
     
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/acceso_style.css">
+    <!-- <link rel="stylesheet" href="css/acceso_style.css">-->
+    <link rel="stylesheet" href="css/acceso.css"> 
 
     <title>Vehículo seguro SLP</title>
 </head>
@@ -38,10 +39,28 @@
             </h2>
             <div class="informacion__contenedor--texto">
                 <h3 class="texto__label">Visualizar el código de acceso al bot</h3>
-                <p class="texto">Código Vigente: <span class="tooltip">57kzf2ER</span></p>
+                <p class="texto">Código Vigente: 
+                    <button class="copyText" data-clipboard-text="57kzf2ER">
+                        57kzf2ER
+                        <span class="message">¡Copiado!</span>
+                    </button>
+                </p>
+                <h3 class="texto__label">Link de acceso al bot</h3>
+                <p class="texto">Ingresar mediante la siguiente url: 
+                    <button class="copyText--1" data-clipboard-text="t.me/VehiculoSeguroSLP_bot">
+                        t.me/VehiculoSeguroSLP_bot
+                        <span class="message--1">¡Copiado!</span>
+                    </button>
+                </p>
             </div>
-            <a class="informacion__contenedor--btn" href="acceso.html">Obtener Código de Acceso</a>
+            <a class="informacion__contenedor--btn" href="https://t.me/VehiculoSeguroSLP_bot" target="_blank">Autodirecciónarse</a>
+            <div class="informacion__contenedor--nota">
+                <h1 class="note">Nota:</h1><h1 class="note--text">Recuerde iniciar con el comando <span class="note--code">/start</span></h1>
+            </div>
         </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+    <script src="js/clipboard.js"></script>
 </body>
 </html>
