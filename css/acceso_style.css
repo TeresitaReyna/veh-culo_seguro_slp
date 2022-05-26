@@ -10,12 +10,11 @@
 }
 
 .informacion{
+    padding-top: 115px;
     display:flex;
 	justify-content: center;
 	align-items: center;
     flex-wrap: wrap;
-    flex-direction: column;
-    padding-top: 115px;
 }
 
 .informacion__contenedor{
